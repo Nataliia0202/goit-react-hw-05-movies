@@ -19,8 +19,8 @@ export const SearchForm = styled.form`
   overflow: hidden;
   width: 100%;
   max-width: 600px;
-  background-color: bisque;
-  border: 2px solid #6d031c;
+  background-color: #f4d8f1;
+  border: 2px solid #43086b;
   border-radius: 4px;
 `;
 
@@ -33,7 +33,7 @@ export const SearchFormButton = styled.button`
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   outline: none;
-  background-color: #a79086;
+  background-color: #daa5e9;
   &:hover {
     opacity: 1;
   }
@@ -48,7 +48,7 @@ export const SearchFormInput = styled.input`
   outline: none;
   padding-left: 16px;
   padding-right: 16px;
-  background-color: bisque;
+  background-color: #f4d8f1;
   &::placeholder {
     font: inherit;
     font-size: 16px;

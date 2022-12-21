@@ -11,6 +11,8 @@ export const GlobalStyle = createGlobalStyle`
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         background-color: #f0e4ed;
+       
+        
     }
     #root {
         display: flex;
@@ -28,6 +30,9 @@ export const GlobalStyle = createGlobalStyle`
         list-style: none;
         margin: 0;
         padding: 0;
+    }
+    a {
+        text-decoration: none;
     }
 `;
 
@@ -96,6 +101,6 @@ export const AdditionalMessageStyle = styled.span`
 
 export const AppBarList = styled.ul`
   display: flex;
-
+  padding: 15px;
   justify-content: flex-end;
 `;
