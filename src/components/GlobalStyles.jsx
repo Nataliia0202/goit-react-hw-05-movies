@@ -10,7 +10,7 @@ export const GlobalStyle = createGlobalStyle`
         sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        background-color: #9a9385;
+        background-color: #f0e4ed;
     }
     #root {
         display: flex;
@@ -50,10 +50,10 @@ export const AppBarItem = styled.li`
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
     transform: scale(1.15);
-    text-shadow: 0px 5px 10px bisque;
+    text-shadow: 0px 5px 10px #f2ebf1;
   }
   &:not(:first-child) {
-    margin-left: 16px;
+    margin-left: 32px;
   }
 `;
 
@@ -63,7 +63,7 @@ export const NavTitle = styled(NavLink)`
   color: #fff;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &.active {
-    color: #6d031c;
+    color: #4d145a;
   }
 `;
 
@@ -80,13 +80,13 @@ export const ErrorSection = styled.section`
 export const NavButton = styled(NavLink)`
   padding: 8px;
   border-radius: 8px;
-  border: 2px solid #6d031c;
-  color: #6d031c;
-  background-color: bisque;
+  border: 2px solid #af2f4d;
+  color: #af2f4d;
+  background-color: #efebe7;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
-    color: bisque;
-    background-color: #6d031c;
+    color: #efebe7;
+    background-color: #af2f4d;
   }
 `;
 
@@ -96,5 +96,6 @@ export const AdditionalMessageStyle = styled.span`
 
 export const AppBarList = styled.ul`
   display: flex;
-  justify-content: center;
+
+  justify-content: flex-end;
 `;

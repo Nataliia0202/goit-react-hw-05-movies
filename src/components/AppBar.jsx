@@ -7,7 +7,7 @@ export const AppBar = () => {
           style={{
             marginBottom: '32px',
             padding: '6px',
-            backgroundColor: '#483233',
+            backgroundColor: '#852b95',
           }}
         >
           <nav>
