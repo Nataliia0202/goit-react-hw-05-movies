@@ -1,5 +1,6 @@
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 import 'modern-normalize';
+import { NavLink } from 'react-router-dom';
 
 export const GlobalStyle = createGlobalStyle`
     body {
@@ -28,4 +29,72 @@ export const GlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0;
     }
+`;
+
+const size = {
+  mobile: '480',
+  tablet: '768',
+  desktop: '1280',
+};
+
+export const device = {
+  mobile: `(min-width: ${size.mobile}px)`,
+  mobileOnly: `(max-width: ${size.tablet - 0.02}px)`,
+  tablet: `(min-width: ${size.tablet}px)`,
+  tabletOnly: `(max-width: ${size.desktop - 0.02}px)`,
+  desktop: `(min-width: ${size.desktop}px)`,
+};
+
+export const AppBarItem = styled.li`
+  cursor: pointer;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    transform: scale(1.15);
+    text-shadow: 0px 5px 10px bisque;
+  }
+  &:not(:first-child) {
+    margin-left: 16px;
+  }
+`;
+
+export const NavTitle = styled(NavLink)`
+  font-weight: 500px;
+  font-size: 32px;
+  color: #fff;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &.active {
+    color: #6d031c;
+  }
+`;
+
+export const ErrorSection = styled.section`
+  text-align: center;
+  padding: 16px;
+  img {
+    padding-bottom: 32px;
+    display: block;
+    margin: 0 auto;
+  }
+`;
+
+export const NavButton = styled(NavLink)`
+  padding: 8px;
+  border-radius: 8px;
+  border: 2px solid #6d031c;
+  color: #6d031c;
+  background-color: bisque;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    color: bisque;
+    background-color: #6d031c;
+  }
+`;
+
+export const AdditionalMessageStyle = styled.span`
+  text-align: center;
+`;
+
+export const AppBarList = styled.ul`
+  display: flex;
+  justify-content: center;
 `;
