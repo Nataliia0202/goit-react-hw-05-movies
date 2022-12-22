@@ -15,6 +15,14 @@ export const Movies = () => {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(false);
     const [searchParams, setSearchParams] = useSearchParams();
+  
+  const searchQuery = searchParams.get('query') ?? '';
+  
+  const nextParams = text !== '' ? { query: text } : {};
+
+  const inputText = event => {
+    setText(event.currentTarget.value);
+  }
 
     const searchFilms = event => {
       event.preventDefault();
@@ -25,11 +33,11 @@ export const Movies = () => {
         return toastInfoDuplication();
       }
       setMovies([]);
-      setSearchParams(text !== '' ? { query: text } : {});
+      setSearchParams(nextParams);
       setText('');
     };
 
-    const searchQuery = searchParams.get('query') ?? '';
+    
 
     useEffect(() => {
       if (!searchQuery) {
@@ -45,9 +53,7 @@ export const Movies = () => {
               setError(true);
               return;
             }
-            // if (results.length > 1 && searchQuery === '') {
-            //     toastSuccess();
-            // };
+            
             const onlyNeedValues = results.map(
               ({
                 id,
@@ -91,7 +97,7 @@ export const Movies = () => {
             placeholder="Search films"
             name="text"
             value={text}
-            onChange={event => setText(event.currentTarget.value)}
+            onChange={inputText}
           />
           <SearchFormButton type="submit">
             <svg

@@ -5,7 +5,7 @@ import { toastError } from 'components/Services/toasts';
 
 export const Home = () => {
   const [movies, setMovies] = useState([]);
-
+  
   useEffect(() => {
     try {
       getTrending().then(data => setMovies(data.results));
