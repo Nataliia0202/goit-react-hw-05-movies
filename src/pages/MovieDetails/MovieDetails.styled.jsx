@@ -39,10 +39,10 @@ export const MovieDetailsInfoWrapper = styled.div`
     margin-left: 32px;
   }
   h2 {
-    color: #6d031c;
+    color: #5b0a6c;
   }
   h3 {
-    color: bisque;
+    color: #7a2382;
   }
   span {
     max-width: 1200px;
@@ -69,7 +69,7 @@ export const MovieDetailsAdditionalWrapper = styled.section`
   max-width: 1600px;
   margin: 32px auto;
   h3 {
-    color: bisque;
+    color: #6c0a66;
   }
 `;
 
@@ -81,8 +81,8 @@ export const MovieDetailsAdditionalNavigate = styled.ul`
     margin-top: 16px;
     padding: 8px;
     border-radius: 8px;
-    border: 2px solid #6d031c;
-    background-color: bisque;
+    border: 2px solid #540458;
+    background-color: #d0a0cd;
     &:not(:first-child) {
       margin-left: 16px;
     }
@@ -90,17 +90,17 @@ export const MovieDetailsAdditionalNavigate = styled.ul`
     &:hover {
       transform: scale(1.15);
       box-shadow: 0px 5px 10px bisque;
-      background-color: #6d031c;
+      background-color: #ae66a9;
     }
   }
 `;
 
 export const NavTitle = styled(NavLink)`
   padding: 8px;
-  color: #6d031c;
+  color: #6c0a66;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
-    color: bisque;
+    color: #c4a1c2;
   }
 `;
 

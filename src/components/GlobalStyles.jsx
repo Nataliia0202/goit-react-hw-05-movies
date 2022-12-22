@@ -85,13 +85,13 @@ export const ErrorSection = styled.section`
 export const NavButton = styled(NavLink)`
   padding: 8px;
   border-radius: 8px;
-  border: 2px solid #af2f4d;
-  color: #af2f4d;
-  background-color: #efebe7;
+  border: 2px solid #7b0d7d;
+  color: #5f115f;
+  background-color: #e0a1f0;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
-    color: #efebe7;
-    background-color: #af2f4d;
+    color: #ebd2f8;
+    background-color: #b121b6;
   }
 `;
 
