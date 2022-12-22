@@ -1,15 +1,17 @@
-import { AppBarList, AppBarItem, NavTitle } from './GlobalStyles';
+import { Outlet } from 'react-router-dom';
+import {
+  AppBarList,
+  AppBarItem,
+  NavTitle,
+  Container,
+  Header,
+} from './GlobalStyles';
 
 export const AppBar = () => {
-    return (
-      <>
-        <header
-          style={{
-            marginBottom: '32px',
-            padding: '6px',
-            backgroundColor: '#852b95',
-          }}
-        >
+  return (
+    <>
+      <Container>
+        <Header>
           <nav>
             <AppBarList>
               <AppBarItem>
@@ -20,7 +22,9 @@ export const AppBar = () => {
               </AppBarItem>
             </AppBarList>
           </nav>
-        </header>
-      </>
-    );
+        </Header>
+        <Outlet />
+      </Container>
+    </>
+  );
 };

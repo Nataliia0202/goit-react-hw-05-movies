@@ -1,5 +1,5 @@
 import { useOutletContext } from 'react-router-dom';
-import { checkImages } from 'components/services/fetchMovies';
+import { checkImages } from 'components/Services/fetchMovies';
 import { CastList } from './Cast.styled';
 
 export const Cast = () => {

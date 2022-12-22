@@ -26,13 +26,13 @@ export const CastList = styled.ul`
       width: 200px;
       height: 300px;
       border-radius: 8px;
-      border: 2px solid #6d031c;
+      border: 2px solid #7f0687;
     }
     p {
-      color: #6d031c;
+      color: #600b74;
     }
     span {
-      color: bisque;
+      color: #8e2585;
     }
   }
 `;

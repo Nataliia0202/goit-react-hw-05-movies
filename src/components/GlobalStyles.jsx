@@ -65,10 +65,13 @@ export const AppBarItem = styled.li`
 export const NavTitle = styled(NavLink)`
   font-weight: 500px;
   font-size: 32px;
-  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  color: #af79f6;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &.active {
-    color: #4d145a;
+    color: white;
+    background-color: #962f9a;
   }
 `;
 
@@ -103,4 +106,23 @@ export const AppBarList = styled.ul`
   display: flex;
   padding: 15px;
   justify-content: flex-end;
+`;
+
+export const Container = styled.div`
+  max-width: 1000px;
+  /* margin: 0 auto; */
+  padding: 0 16px;
+`;
+export const Header = styled.header`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 8px 0;
+  margin-bottom: 16px;
+  /* background-color: #852b95; */
+
+  > nav {
+    display: flex;
+  }
 `;

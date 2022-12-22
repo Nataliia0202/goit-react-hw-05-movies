@@ -10,7 +10,7 @@ export const ReviewsList = styled.ul`
       margin-bottom: 16px;
     }
     p {
-      color: bisque;
+      color: #9c12c2;
     }
   }
 `;
